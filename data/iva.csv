@@ -1,0 +1,225 @@
+Country,Region,Year,Visitors
+Canada,AMERICAS,2014,92780
+USA,AMERICAS,2014,484641
+Other Countries in America,AMERICAS,2014,57520
+Brunei Darussalam,ASIA (SouthEast),2014,77645
+Indonesia,ASIA (SouthEast),2014,3023094
+Malaysia,ASIA (SouthEast),2014,1232577
+Myanmar,ASIA (SouthEast),2014,112707
+Philippines,ASIA (SouthEast),2014,676060
+Thailand,ASIA (SouthEast),2014,506332
+Vietnam,ASIA (SouthEast),2014,424070
+Other Countries in SouthEast Asia,ASIA (SouthEast),2014,57013
+Hong Kong SAR,ASIA (North),2014,630714
+Japan,ASIA (North),2014,824379
+China,ASIA (North),2014,1721565
+South Korea,ASIA (North),2014,536544
+Taiwan,ASIA (North),2014,337331
+Other Countries in North Asia,ASIA (North),2014,32442
+Bangladesh,ASIA (South),2014,124861
+India,ASIA (South),2014,943208
+Nepal,ASIA (South),2014,14565
+Pakistan,ASIA (South),2014,17665
+Sri Lanka,ASIA (South),2014,88777
+Other Countries in South Asia,ASIA (South),2014,10512
+Iran,ASIA(West),2014,12366
+Israel,ASIA(West),2014,15260
+Kuwait,ASIA(West),2014,11030
+Saudi Arabia,ASIA(West),2014,25750
+United Arab Emirates,ASIA(West),2014,75700
+Other Countries in West Asia,ASIA(West),2014,29938
+Austria,EUROPE,2014,26490
+Belgium & Luxembourg,EUROPE,2014,28684
+Denmark,EUROPE,2014,31878
+Finland,EUROPE,2014,30704
+France,EUROPE,2014,156801
+Germany,EUROPE,2014,263396
+Greece,EUROPE,2014,8286
+Italy,EUROPE,2014,67028
+Netherlands,EUROPE,2014,81779
+Norway,EUROPE,2014,33488
+Poland,EUROPE,2014,20994
+Rep of Ireland,EUROPE,2014,16404
+Russian Federation,EUROPE,2014,90618
+Spain,EUROPE,2014,44194
+Sweden,EUROPE,2014,44039
+Switzerland,EUROPE,2014,103404
+Turkey,EUROPE,2014,18680
+UK,EUROPE,2014,451759
+Other Countries in Eastern Europe,EUROPE,2014,79523
+Other Countries in Western Europe,EUROPE,2014,18407
+Australia,OCEANIA,2014,1074129
+New Zealand,OCEANIA,2014,118635
+Other Countries in Oceania,OCEANIA,2014,14321
+Egypt,AFRICA,2014,4360
+Mauritius,AFRICA,2014,8021
+South Africa (Rep of),AFRICA,2014,29753
+Other Countries in Africa,AFRICA,2014,23917
+Canada,AMERICAS,2013,92685
+USA,AMERICAS,2013,491946
+Other Countries in America,AMERICAS,2013,56834
+Brunei Darussalam,ASIA (SouthEast),2013,79866
+Indonesia,ASIA (SouthEast),2013,3088859
+Malaysia,ASIA (SouthEast),2013,1280942
+Myanmar,ASIA (SouthEast),2013,99367
+Philippines,ASIA (SouthEast),2013,687794
+Thailand,ASIA (SouthEast),2013,497409
+Vietnam,ASIA (SouthEast),2013,380495
+Other Countries in SouthEast Asia,ASIA (SouthEast),2013,51663
+Hong Kong SAR,ASIA (North),2013,539810
+Japan,ASIA (North),2013,832845
+China,ASIA (North),2013,2269870
+South Korea,ASIA (North),2013,471768
+Taiwan,ASIA (North),2013,350308
+Other Countries in North Asia,ASIA (North),2013,28102
+Bangladesh,ASIA (South),2013,119324
+India,ASIA (South),2013,933553
+Nepal,ASIA (South),2013,12738
+Pakistan,ASIA (South),2013,20248
+Sri Lanka,ASIA (South),2013,95606
+Other Countries in South Asia,ASIA (South),2013,8706
+Iran,ASIA(West),2013,10956
+Israel,ASIA(West),2013,14579
+Kuwait,ASIA(West),2013,10613
+Saudi Arabia,ASIA(West),2013,19896
+United Arab Emirates,ASIA(West),2013,72553
+Other Countries in West Asia,ASIA(West),2013,28199
+Austria,EUROPE,2013,24731
+Belgium & Luxembourg,EUROPE,2013,27352
+Denmark,EUROPE,2013,31920
+Finland,EUROPE,2013,29375
+France,EUROPE,2013,160013
+Germany,EUROPE,2013,251560
+Greece,EUROPE,2013,7200
+Italy,EUROPE,2013,66650
+Netherlands,EUROPE,2013,82926
+Norway,EUROPE,2013,35927
+Poland,EUROPE,2013,21854
+Rep of Ireland,EUROPE,2013,17446
+Russian Federation,EUROPE,2013,82134
+Spain,EUROPE,2013,39507
+Sweden,EUROPE,2013,45256
+Switzerland,EUROPE,2013,94380
+Turkey,EUROPE,2013,19845
+UK,EUROPE,2013,461459
+Other Countries in Eastern Europe,EUROPE,2013,73548
+Other Countries in Western Europe,EUROPE,2013,18111
+Australia,OCEANIA,2013,1125179
+New Zealand,OCEANIA,2013,120447
+Other Countries in Oceania,OCEANIA,2013,15502
+Egypt,AFRICA,2013,3782
+Mauritius,AFRICA,2013,8546
+South Africa (Rep of),AFRICA,2013,31990
+Other Countries in Africa,AFRICA,2013,22316
+Canada,AMERICAS,2012,87795
+USA,AMERICAS,2012,477213
+Other Countries in America,AMERICAS,2012,51392
+Brunei Darussalam,ASIA (SouthEast),2012,71755
+Indonesia,ASIA (SouthEast),2012,2837537
+Malaysia,ASIA (SouthEast),2012,1231686
+Myanmar,ASIA (SouthEast),2012,93046
+Philippines,ASIA (SouthEast),2012,656804
+Thailand,ASIA (SouthEast),2012,477654
+Vietnam,ASIA (SouthEast),2012,366234
+Other Countries in SouthEast Asia,ASIA (SouthEast),2012,44891
+Hong Kong SAR,ASIA (North),2012,472167
+Japan,ASIA (North),2012,757116
+China,ASIA (North),2012,2034177
+South Korea,ASIA (North),2012,445184
+Taiwan,ASIA (North),2012,282203
+Other Countries in North Asia,ASIA (North),2012,27889
+Bangladesh,ASIA (South),2012,110673
+India,ASIA (South),2012,894993
+Nepal,ASIA (South),2012,13425
+Pakistan,ASIA (South),2012,21206
+Sri Lanka,ASIA (South),2012,83359
+Other Countries in South Asia,ASIA (South),2012,8809
+Iran,ASIA(West),2012,18553
+Israel,ASIA(West),2012,13600
+Kuwait,ASIA(West),2012,7621
+Saudi Arabia,ASIA(West),2012,17969
+United Arab Emirates,ASIA(West),2012,65552
+Other Countries in West Asia,ASIA(West),2012,23344
+Austria,EUROPE,2012,23264
+Belgium & Luxembourg,EUROPE,2012,26824
+Denmark,EUROPE,2012,31479
+Finland,EUROPE,2012,33333
+France,EUROPE,2012,158923
+Germany,EUROPE,2012,252433
+Greece,EUROPE,2012,8137
+Italy,EUROPE,2012,65557
+Netherlands,EUROPE,2012,81603
+Norway,EUROPE,2012,36803
+Poland,EUROPE,2012,18905
+Rep of Ireland,EUROPE,2012,18965
+Russian Federation,EUROPE,2012,68957
+Spain,EUROPE,2012,37778
+Sweden,EUROPE,2012,43248
+Switzerland,EUROPE,2012,83857
+Turkey,EUROPE,2012,18029
+UK,EUROPE,2012,446497
+Other Countries in Eastern Europe,EUROPE,2012,65903
+Other Countries in Western Europe,EUROPE,2012,16839
+Australia,OCEANIA,2012,1050373
+New Zealand,OCEANIA,2012,123701
+Other Countries in Oceania,OCEANIA,2012,15073
+Egypt,AFRICA,2012,3630
+Mauritius,AFRICA,2012,9857
+South Africa (Rep of),AFRICA,2012,32739
+Other Countries in Africa,AFRICA,2012,21768
+Canada,AMERICAS,2011,82932
+USA,AMERICAS,2011,440576
+Other Countries in America,AMERICAS,2011,40234
+Brunei Darussalam,ASIA (SouthEast),2011,62243
+Indonesia,ASIA (SouthEast),2011,2592222
+Malaysia,ASIA (SouthEast),2011,1140935
+Myanmar,ASIA (SouthEast),2011,94184
+Philippines,ASIA (SouthEast),2011,677723
+Thailand,ASIA (SouthEast),2011,472708
+Vietnam,ASIA (SouthEast),2011,332231
+Other Countries in SouthEast Asia,ASIA (SouthEast),2011,42004
+Hong Kong SAR,ASIA (North),2011,464375
+Japan,ASIA (North),2011,656417
+China,ASIA (North),2011,1577522
+South Korea,ASIA (North),2011,414879
+Taiwan,ASIA (North),2011,238488
+Other Countries in North Asia,ASIA (North),2011,27682
+Bangladesh,ASIA (South),2011,95531
+India,ASIA (South),2011,868991
+Nepal,ASIA (South),2011,12757
+Pakistan,ASIA (South),2011,20928
+Sri Lanka,ASIA (South),2011,83991
+Other Countries in South Asia,ASIA (South),2011,9017
+Iran,ASIA(West),2011,32434
+Israel,ASIA(West),2011,12137
+Kuwait,ASIA(West),2011,8278
+Saudi Arabia,ASIA(West),2011,17041
+United Arab Emirates,ASIA(West),2011,62736
+Other Countries in West Asia,ASIA(West),2011,21667
+Austria,EUROPE,2011,19889
+Belgium & Luxembourg,EUROPE,2011,24979
+Denmark,EUROPE,2011,27201
+Finland,EUROPE,2011,23905
+France,EUROPE,2011,140299
+Germany,EUROPE,2011,219952
+Greece,EUROPE,2011,7130
+Italy,EUROPE,2011,53520
+Netherlands,EUROPE,2011,81090
+Norway,EUROPE,2011,32450
+Poland,EUROPE,2011,14095
+Rep of Ireland,EUROPE,2011,18565
+Russian Federation,EUROPE,2011,59378
+Spain,EUROPE,2011,34977
+Sweden,EUROPE,2011,37368
+Switzerland,EUROPE,2011,79023
+Turkey,EUROPE,2011,14731
+UK,EUROPE,2011,442611
+Other Countries in Eastern Europe,EUROPE,2011,54453
+Other Countries in Western Europe,EUROPE,2011,15886
+Australia,OCEANIA,2011,956039
+New Zealand,OCEANIA,2011,122995
+Other Countries in Oceania,OCEANIA,2011,14381
+Egypt,AFRICA,2011,3829
+Mauritius,AFRICA,2011,10527
+South Africa (Rep of),AFRICA,2011,33506
+Other Countries in Africa,AFRICA,2011,25528
