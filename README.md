@@ -1,7 +1,9 @@
-# DataProd
 ## Data Products Project
+This report shows the total number of visitor arrivals from the world toSingapore by specifiying years, areas and countries.  
 
-## International Visitor Arrivals
+### Data Info 
+Data obtained from: [Singapore Tourism Board](https://www.stb.gov.sg/statistics-and-market-insights/Pages/statistics-visitor-arrivals.aspx)  
+
 International Visitor Arrivals refer to travellers taking a trip to Singapore whose length of stay is less than a year.  
 This excludes:  
 * All Malaysian citizens arriving by land;  
