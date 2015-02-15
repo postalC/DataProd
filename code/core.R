@@ -23,7 +23,7 @@ getMessage <- function(year, type, submit) {
     } else if (submit == 0) {
         "Please click on button '--> generate @_@ -->' to proceed..."
     } else {
-        "Running... please check the result at [Graph|Map|Summary|Data] tab... :)"
+        "Running... please check the result at [Summary|Data|Graph|Map] tab... :)"
     }
 }
 
@@ -43,7 +43,7 @@ getResult <- function(year, type) {
             theme(plot.title = element_text(size = 20)) +
             theme(axis.text.x = element_text(angle = 90, vjust = 1)) 
     } else {
-        pData <- subset(data, pData$Region == type)
+        pData <- subset(pData, pData$Region == type)
         pR <- ggplot(data = pData, aes(x=Country, y=Visitors))
         pR + geom_line(aes(colour = factor(Year), group = Year), size = 2) +
             xlab("Regions") +
@@ -72,13 +72,13 @@ getMap <- function(year, type) {
     colnames(pGeo)[4] <- "Totals"
     ## -- Point Size --
     if (type == "All"){
-        pGeo$Scale <- pGeo$Totals/(1000*length(unique(pData$Year)))
+        pGeo$Scale <- pGeo$Totals/(100*length(unique(pData$Year)))
     } else if  (type == "AMERICAS"){
         pGeo$Scale <- pGeo$Totals/(50*length(unique(pData$Year)))
     } else if  (type == "ASIA (SouthEast)"){
-        pGeo$Scale <- pGeo$Totals/(500*length(unique(pData$Year)))    
+        pGeo$Scale <- pGeo$Totals/(200*length(unique(pData$Year)))    
     } else if  (type == "ASIA (North)"){
-        pGeo$Scale <- pGeo$Totals/(300*length(unique(pData$Year)))
+        pGeo$Scale <- pGeo$Totals/(200*length(unique(pData$Year)))
     } else if  (type == "ASIA (South)"){
         pGeo$Scale <- pGeo$Totals/(150*length(unique(pData$Year)))          
     } else if  (type == "ASIA(West)"){
@@ -88,7 +88,7 @@ getMap <- function(year, type) {
     } else if  (type == "OCEANIA"){
         pGeo$Scale <- pGeo$Totals/(100*length(unique(pData$Year)))  
     } else if  (type == "AFRICA"){
-        pGeo$Scale <- pGeo$Totals/(10*length(unique(pData$Year)))
+        pGeo$Scale <- pGeo$Totals/(5*length(unique(pData$Year)))
     }
     ## Plot Map --
     world <- map_data("world")

@@ -37,8 +37,12 @@ shinyUI(fluidPage(
                                     "Region - Oceania" = "OCEANIA",
                                     "Region - Africa" = "AFRICA"),
                         selected = "-"),
+            br(),
+            helpText("The process would took", code("30~40 seconds")," to generate on the first run..."),
+            
             # -- Submit Button --
             actionButton("submit", code("--> generate @_@ -->")),
+            br(),
             br(),
             # -- Error Message -
             h4('Application Message: '),
@@ -62,10 +66,10 @@ shinyUI(fluidPage(
                          h4("What report generatad: "),
                          h5("You may found the generated reports/details on tab-panel:"),
                          h5("-", code('Data'), "show the information about the data,"),
-                         h5("-", code('Graph'), "show the visitors changes accross selected year(s),"),
-                         h5("-", code('Map'), "show the geo-location of the visitors from and thier numbers."),
                          h5("-", code("Summary"), "tab to check the data summary,"),
                          h5("-", code("Data"), "tab to check the data info,"),
+                         h5("-", code('Graph'), "show the visitors changes accross selected year(s),"),
+                         h5("-", code('Map'), "show the geo-location of the visitors from and thier numbers."),
                          br(),
                          # -- Steps --
                          h4("How it works: "),
@@ -73,14 +77,12 @@ shinyUI(fluidPage(
                          h5("1. Select the year(s) by checking the checkbox below, multiple selection is allowed;"),
                          h5("2. Select the type of report - Number of Visitor(y axis) by Region or Countries(x axis);"),
                          h5("3. Click the ", code("--> generate @_@ -->"), "button to generate the report,"),
-                         h5("4. Click the ", code("Graph"), "tab to check the plot info,"),
-                         h5("5. Click the ", code("Map"), "tab to check the map info,"),
-                         h5("6. Click the ", code("Summary"), "tab to check data summary,"),
-                         h5("7. Click the ", code("Data"), "tab to check the data,"),
-                         h5("8. Or repeat steps 1-2 with different combination to generate different report."),
-                         br(),
-                         h4("The process would took", code("30~40 seconds")," to generate on the first run, thank you for your understanding and patience.")
-                         ),  
+                         h5("4. Click the ", code("Summary"), "tab to check data summary,"),
+                         h5("5. Click the ", code("Data"), "tab to check the data,"),
+                         h5("6. Click the ", code("Graph"), "tab to check the plot info,"),
+                         h5("7. Click the ", code("Map"), "tab to check the map info,"),
+                         h5("8. Or repeat steps 1-2 with different combination to generate different report.")
+                     ),  
                 ## -- Info Tab
                 tabPanel("Source",
                          # -- About Singapore --
@@ -105,10 +107,10 @@ shinyUI(fluidPage(
                             a("Data Produt Project", 
                               href = "https://github.com/postalC/DataProd"))
                          ),
-                tabPanel("Graph",plotOutput("result", height = 750, width = 1200)),
-                tabPanel("Map",plotOutput("map", height = 700, width = 1200)),
                 tabPanel("Summary", verbatimTextOutput("summary")),
-                tabPanel("Data", tableOutput("table"))
+                tabPanel("Data", tableOutput("table")),
+                tabPanel("Graph",plotOutput("result", height = 750, width = 1200)),
+                tabPanel("Map",plotOutput("map", height = 700, width = 1200))
             )
         )
     )
