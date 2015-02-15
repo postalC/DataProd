@@ -9,7 +9,7 @@ shinyUI(fluidPage(
     sidebarLayout(
         # -- SidePanel --    
         absolutePanel(
-            top = 0, left = 5, width = 485,
+            top = 5, left = 5, width = 485,
             draggable = TRUE,
             # -- Singapore Merlion Image --
             img(src = "ML.jpg", height = 348, width = 468),      
@@ -47,7 +47,7 @@ shinyUI(fluidPage(
         
         # -- Main Panel --
         absolutePanel(
-            top = 0, left = 490, width = 1000,
+            top = 5, left = 490, width = 1000,
             draggable = TRUE,
 
             tabsetPanel(
@@ -79,7 +79,7 @@ shinyUI(fluidPage(
                          h5("7. Click the ", code("Data"), "tab to check the data,"),
                          h5("8. Or repeat steps 1-2 with different combination to generate different report."),
                          br(),
-                         h4("The process would took few seconds to generate on the first run, thank you for your understanding and patience.")
+                         h4("The process would took", code("30~40 seconds")," to generate on the first run, thank you for your understanding and patience.")
                          ),  
                 ## -- Info Tab
                 tabPanel("Source",
@@ -106,7 +106,7 @@ shinyUI(fluidPage(
                               href = "https://github.com/postalC/DataProd"))
                          ),
                 tabPanel("Graph",plotOutput("result", height = 750, width = 1200)),
-                tabPanel("Map",plotOutput("map", height = 600, width = 1000)),
+                tabPanel("Map",plotOutput("map", height = 700, width = 1200)),
                 tabPanel("Summary", verbatimTextOutput("summary")),
                 tabPanel("Data", tableOutput("table"))
             )

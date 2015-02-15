@@ -1,7 +1,5 @@
 library(ggplot2)
 library(pxR)
-library(ggmap)
-library(maptools)
 library(maps)
 
 ## -- Read Visitors Data --
@@ -74,27 +72,34 @@ getMap <- function(year, type) {
     colnames(pGeo)[4] <- "Totals"
     ## -- Point Size --
     if (type == "All"){
-        pGeo$Total <- pGeo$Total/(1000*length(unique(pData$Year)))
+        pGeo$Scale <- pGeo$Totals/(1000*length(unique(pData$Year)))
     } else if  (type == "AMERICAS"){
-        pGeo$Total <- pGeo$Total/(50*length(unique(pData$Year)))
+        pGeo$Scale <- pGeo$Totals/(50*length(unique(pData$Year)))
     } else if  (type == "ASIA (SouthEast)"){
-        pGeo$Total <- pGeo$Total/(500*length(unique(pData$Year)))    
+        pGeo$Scale <- pGeo$Totals/(500*length(unique(pData$Year)))    
     } else if  (type == "ASIA (North)"){
-        pGeo$Total <- pGeo$Total/(300*length(unique(pData$Year)))
+        pGeo$Scale <- pGeo$Totals/(300*length(unique(pData$Year)))
     } else if  (type == "ASIA (South)"){
-        pGeo$Total <- pGeo$Total/(150*length(unique(pData$Year)))          
+        pGeo$Scale <- pGeo$Totals/(150*length(unique(pData$Year)))          
     } else if  (type == "ASIA(West)"){
-        pGeo$Total <- pGeo$Total/(10*length(unique(pData$Year)))         
+        pGeo$Scale <- pGeo$Totals/(10*length(unique(pData$Year)))         
     } else if  (type == "EUROPE"){
-        pGeo$Total <- pGeo$Total/(50*length(unique(pData$Year)))   
+        pGeo$Scale <- pGeo$Totals/(50*length(unique(pData$Year)))   
     } else if  (type == "OCEANIA"){
-        pGeo$Total <- pGeo$Total/(100*length(unique(pData$Year)))  
+        pGeo$Scale <- pGeo$Totals/(100*length(unique(pData$Year)))  
     } else if  (type == "AFRICA"){
-        pGeo$Total <- pGeo$Total/(10*length(unique(pData$Year)))
+        pGeo$Scale <- pGeo$Totals/(10*length(unique(pData$Year)))
     }
     ## Plot Map --
-    map(database="world", regions=".", fill=TRUE, col="white", bg="lightblue", ylim=c(-60, 90), mar=c(0,0,0,0))
-    points(pGeo$Lon,pGeo$Lat, col=heat.colors(200), pch=16, cex = pGeo$Total)
+    world <- map_data("world")
+    ggplot() +
+        geom_polygon(data=world, aes(x=long, y=lat,group=group)) + 
+        geom_point(data=pGeo,aes(Lon,Lat, colour=Scale),cex = pGeo$Scale) + 
+        scale_colour_gradient(high = "pink", low = "red") +
+        ggtitle("Total Number of Visitor by Countries") +
+        theme(plot.title = element_text(lineheight=.8, face="bold")) +
+        xlab("Longitude") + 
+        ylab("Latitude")
 }
 
 # -- Return Summary --
