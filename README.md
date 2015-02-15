@@ -1,5 +1,7 @@
 ## Data Products Project
 This report shows the total number of visitor arrivals from the world toSingapore by specifiying years, areas and countries.  
+[Shiny Application Site](https://postalc.shinyapps.io/visFull/)  
+[Slidify Presentation Site] (http://postalc.github.io/visFullSlidify/)  
 
 ### Data Info 
 Data obtained from: [Singapore Tourism Board](https://www.stb.gov.sg/statistics-and-market-insights/Pages/statistics-visitor-arrivals.aspx)  
