@@ -12,7 +12,7 @@ shinyUI(fluidPage(
             top = 5, left = 5, width = 485,
             draggable = TRUE,
             # -- Singapore Merlion Image --
-            img(src = "ML.jpg", height = 348, width = 468),      
+            img(src = "icon.jpg", height = 348, width = 468),      
             
             # -- Year Input --
             checkboxGroupInput(inputId="year",  
@@ -37,16 +37,12 @@ shinyUI(fluidPage(
                                     "Region - Oceania" = "OCEANIA",
                                     "Region - Africa" = "AFRICA"),
                         selected = "-"),
-            br(),
+            # -- Help Message --
             helpText("The process would took", code("30~40 seconds")," to generate on the first run..."),
-            
-            # -- Submit Button --
-            actionButton("submit", code("--> generate @_@ -->")),
-            br(),
-            br(),
             # -- Error Message -
-            h4('Application Message: '),
-            textOutput('error')
+            h4(textOutput('error')),
+            # -- Submit Button --
+            actionButton("submit", code("--> generate @_@ -->"))
         ),
         
         # -- Main Panel --
@@ -65,11 +61,11 @@ shinyUI(fluidPage(
                          ## -- What --
                          h4("What report generatad: "),
                          h5("You may found the generated reports/details on tab-panel:"),
-                         h5("-", code('Data'), "show the information about the data,"),
-                         h5("-", code("Summary"), "tab to check the data summary,"),
-                         h5("-", code("Data"), "tab to check the data info,"),
-                         h5("-", code('Graph'), "show the visitors changes accross selected year(s),"),
-                         h5("-", code('Map'), "show the geo-location of the visitors from and thier numbers."),
+                         h5("-", code('0.Data'), "show the information about the data,"),
+                         h5("-", code("1.Summary"), "tab to check the data summary,"),
+                         h5("-", code("2.Data"), "tab to check the data info,"),
+                         h5("-", code('3.Graph'), "show the visitors changes accross selected year(s),"),
+                         h5("-", code('4.Map'), "show the geo-location of the visitors from and thier numbers."),
                          br(),
                          # -- Steps --
                          h4("How it works: "),
@@ -77,17 +73,19 @@ shinyUI(fluidPage(
                          h5("1. Select the year(s) by checking the checkbox below, multiple selection is allowed;"),
                          h5("2. Select the type of report - Number of Visitor(y axis) by Region or Countries(x axis);"),
                          h5("3. Click the ", code("--> generate @_@ -->"), "button to generate the report,"),
-                         h5("4. Click the ", code("Summary"), "tab to check data summary,"),
-                         h5("5. Click the ", code("Data"), "tab to check the data,"),
-                         h5("6. Click the ", code("Graph"), "tab to check the plot info,"),
-                         h5("7. Click the ", code("Map"), "tab to check the map info,"),
+                         h5("4. Click the ", code("1.Summary"), "tab to check data summary,"),
+                         h5("5. Click the ", code("2.Data"), "tab to check the data,"),
+                         h5("6. Click the ", code("3.Graph"), "tab to check the plot info,"),
+                         h5("7. Click the ", code("4.Map"), "tab to check the map info,"),
                          h5("8. Or repeat steps 1-2 with different combination to generate different report.")
                      ),  
                 ## -- Info Tab
-                tabPanel("Source",
+                tabPanel("0.Source",
                          # -- About Singapore --
                          h3("Singapore", a("Wikipedia", 
                                            href = "http://en.wikipedia.org/wiki/Singapore")),   
+                         # -- Singapre Map --
+                         img(src = "map.jpg", height = 187, width = 269), 
                          # -- Data Source --
                          h4("Data obtained from: ",
                             a("Singapore Tourism Board", 
@@ -107,10 +105,10 @@ shinyUI(fluidPage(
                             a("Data Produt Project", 
                               href = "https://github.com/postalC/DataProd"))
                          ),
-                tabPanel("Summary", verbatimTextOutput("summary")),
-                tabPanel("Data", tableOutput("table")),
-                tabPanel("Graph",plotOutput("result", height = 750, width = 1200)),
-                tabPanel("Map",plotOutput("map", height = 700, width = 1200))
+                tabPanel("1.Summary", h3(textOutput('summaryMessage')), verbatimTextOutput("summary")),
+                tabPanel("2.Data", h3(textOutput('tableMessage')), tableOutput("table")),
+                tabPanel("3.Graph", h3(textOutput('resultMessage')), plotOutput("result", height = 750, width = 1200)),
+                tabPanel("4.Map", h3(textOutput('mapMessage')), plotOutput("map", height = 700, width = 1200))
             )
         )
     )

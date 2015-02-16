@@ -19,11 +19,11 @@ getMessage <- function(year, type, submit) {
     if (length(year) == 0){
         "Year is not selected..."
     } else if (type == "-"){
-        "Type is not selected..."
+        "Type (Contries/Region) is not selected..."
     } else if (submit == 0) {
         "Please click on button '--> generate @_@ -->' to proceed..."
     } else {
-        "Running... please check the result at [Summary|Data|Graph|Map] tab... :)"
+        "Completed... :)"
     }
 }
 
@@ -38,8 +38,8 @@ getResult <- function(year, type) {
         p1 <- ggplot(data = pData, aes(x=Country, y=Visitors))
         p1 + geom_line(aes(colour = Year, group = Year), size = 2) +
             xlab("Countries (Order by Region)") +
-            ylab("Total Number of Visitor (Thursands)") +
-            ggtitle("Number of travellers visiting Singapore and their Country of Residence") +
+            ylab("Total Number of Travellers (Thursands)") +
+            ggtitle("Number of travellers visited Singapore and their Country of Residence") +
             theme(plot.title = element_text(size = 20)) +
             theme(axis.text.x = element_text(angle = 90, vjust = 1)) 
     } else {
@@ -47,8 +47,8 @@ getResult <- function(year, type) {
         pR <- ggplot(data = pData, aes(x=Country, y=Visitors))
         pR + geom_line(aes(colour = factor(Year), group = Year), size = 2) +
             xlab("Regions") +
-            ylab("Total Number of Visitors (Thursands)") +
-            ggtitle("Number of travellers visiting Singapore and their Region") +
+            ylab("Total Number of Travellers (Thursands)") +
+            ggtitle("Number of travellers visited Singapore and their Region") +
             theme(plot.title = element_text(size = 20)) +
             theme(axis.text.x = element_text(angle = 90, vjust = 1))   
     }
@@ -96,7 +96,7 @@ getMap <- function(year, type) {
         geom_polygon(data=world, aes(x=long, y=lat,group=group)) + 
         geom_point(data=pGeo,aes(Lon,Lat, colour=Scale),cex = pGeo$Scale) + 
         scale_colour_gradient(high = "pink", low = "red") +
-        ggtitle("Total Number of Visitor by Countries") +
+        ggtitle("The Scale of Traveller by Countries") +
         theme(plot.title = element_text(lineheight=.8, face="bold")) +
         xlab("Longitude") + 
         ylab("Latitude")
